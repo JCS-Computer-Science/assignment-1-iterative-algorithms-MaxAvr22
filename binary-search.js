@@ -6,15 +6,15 @@ function binarySearch(array, searchTerm) {
         const mid = Math.floor((left + right) / 2);
 
         if (array[mid] === searchTerm) {
-            return mid;
+            return mid; 
         } else if (array[mid] < searchTerm) {
-            left = mid + 1;
+            left = mid + 1; 
         } else {
             right = mid - 1;
         }
     }
 
-    return null;
+    return null; 
 }
 
 module.exports = binarySearch;
